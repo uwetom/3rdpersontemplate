@@ -26,7 +26,9 @@ func _input(event: InputEvent) -> void:
 		rotate_y(deg_to_rad(-event.relative.x * sens_horizonal))
 		visuals.rotate_y(deg_to_rad(event.relative.y * sens_vertical))
 		camera_mount.rotate_x(deg_to_rad(-event.relative.y * sens_vertical))
-
+	if event.is_action_pressed("quit"):
+		get_tree().quit()
+		
 
 func _physics_process(delta: float) -> void:
 	
