@@ -3928,6 +3928,7 @@ skin = SubResource("Skin_md14h")
 libraries = {
 &"": SubResource("AnimationLibrary_52ee3")
 }
+playback_default_blend_time = 0.2
 
 [node name="Camera_mount" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.33327, 0)
